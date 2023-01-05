@@ -6,7 +6,6 @@ single:
 multiple: 
 	docker-compose up --build --scale my_ping=$(nb) -d
 
-
 logs: 
 	docker-compose logs -f
 
